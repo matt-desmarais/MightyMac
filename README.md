@@ -35,12 +35,12 @@ Mighty Mac is a working Macintosh SE running System 6 from a floppy and speaking
 
 ## Software Components
 
-- Wake word detection and speech recording on the Pi Zero 2  
+- [Wake word detection](https://www.home-assistant.io/voice_control/create_wake_word/#to-add-your-personal-wake-word-to-home-assistant) and speech recording on the Pi Zero 2  
 - Speech-to-text using [Whisper](https://github.com/openai/whisper)  
 - AI replies using [ChatGPT API](https://platform.openai.com/)  
 - MQTT for messaging  
-- CircuitPython on the Pico W for keyboard emulation  
-- ESPHome on the Wemos D1 Mini for bump detection  
+- CircuitPython on the Pico W for [keyboard emulation](https://docs.circuitpython.org/projects/hid/en/latest/api.html#adafruit-hid-keyboard-keyboard)  
+- Wemos D1 Mini with [ESPHome MPU6050](https://esphome.io/components/sensor/mpu6050.html) for bump detection  
 - Home Assistant automation listens for bump events and publishes randomized responses to MQTT
 
 ---
